@@ -1,0 +1,114 @@
+/* topbar */
+
+.top-bar {
+  background-color: #ffffff;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+  padding: 10px 40px; /* Adjust padding as needed */
+  position: relative; /* Add position relative for absolute positioning */
+  z-index: 2;
+}
+
+.logo {
+  height: 30px;
+  position: absolute;
+  top: 28px; /* Position from top */
+  left: 40px; /* Position from left */
+}
+
+.id {
+  padding: 5px;
+  font-weight: bold;
+  border: 1px solid #EBF0F5;
+  border-radius: 16px;
+}
+
+.button-id {
+  padding: 10px;
+  font-weight: lighter;
+  background: white;
+  border: 1px solid #EBF0F5; /* Remove border */
+  border-radius: 12px;
+  position: absolute;
+  top: 28px; /* Position from top */
+  right: 40px; /* Position from right */
+}
+.separation-line-topbar{
+  height: 1px;
+  width: 100%;
+  background-color: #EBF0F5; /* Add the grey color */
+  position: absolute;
+  top: 88px; /* Position from top */
+  left: 0; /* Align with the left edge of the top bar */
+}
+
+/* sidebar */
+.sidebar {
+  background-color: #ffffff;
+  top: 100px;
+  width: 226px;
+  height: 100vh;
+  position: fixed;
+  top: 88px;
+  left: 0;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.menu-item {
+  margin: 20px 10px;
+  padding: 20px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+  background-color: #ddd;
+}
+
+.active {
+  background-color: #ddd;
+}
+
+.separation-line {
+  width: 1px;
+  height: 100%;
+  background-color: #EBF0F5;
+  position: absolute;
+  top: 0;
+  left: 226px;
+}
+/* content */
+.container{
+  position: absolute;
+  top: 164px;
+  left: 264px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.item1 {
+  grid-area: 1/1 / 2 / 2;
+}
+
+.item2 {
+  grid-area: 2 / 1 / 2 / 1;
+}
+
+.item3 {
+  grid-area: 3 / 1 / 3 / 1;
+}
+
+.item4 {
+  grid-area:  1 / 2 / 2 / 2;
+}
+
+.item5 {
+  grid-area: 2 / 2 / 3 / 2;
+}
