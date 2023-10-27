@@ -32,12 +32,12 @@ function CustomModal({ isOpen, onClose ,updateData}) {
   };
 
   const greyLine = {
-    borderBottom: '1px solid #ccc',
+    borderBottom: '1px solid rgb(235,240,245)',
     marginBottom: '20px',
   };
 
   const inputStyle = {
-    width: '100%',
+    width: '20%',
     padding: '8px',
     marginBottom: '10px',
     borderRadius: '4px',
@@ -90,50 +90,103 @@ function CustomModal({ isOpen, onClose ,updateData}) {
         <div style={modalOverlayStyle}>
           <div style={modalContentStyle}>
             <div style={headerSectionStyle}>
-              <div>
-                <h2>Update Scores</h2>
+              <div style={{color: '#222F3E',
+                      fontFamily: 'DM Sans, sans-serif',
+                      fontSize: '36px',
+                      fontStyle: 'normal',
+                      fontWeight: '700',
+                      lineHeight: 'normal',
+                      letterSpacing: '-0.72px',}}>
+              Update Scores
               </div>
               <div>
-                <img src="/assets/logo.png" alt="Logo" style={{ height: '30px' }} />
+                <img src="/assets/html-logo.png" alt="Logo" style={{ height: '30px' }} />
               </div>
             </div>
     
             <div style={greyLine}></div>
     
             <div>
+              <div style={{
+                display: "flex",
+                justifyContent: "space-between"
+              }}>
+              <div style={{
+                color: 'var(--secondary-text, #566474)',
+                fontFamily: 'DM Sans, sans-serif ',
+                fontSize: '18px',
+                fontStyle: 'normal',
+                fontWeight: '400',
+                lineHeight: '28px', /* 155.556% */
+                letterSpacing:' -0.36px'
+              }}>update your Rank </div>
               <input
                 type="text"
-                placeholder="Update your rank against that"
+                placeholder="rank "
                 style={inputStyle}
                 value={rank}
                 onChange={handleRankChange}
               />
+              </div>
+              <div style={{
+                display: "flex",
+                justifyContent: "space-between"
+              }}>
+              <div style={{
+                color: 'var(--secondary-text, #566474)',
+                fontFamily: 'DM Sans, sans-serif ',
+                fontSize: '18px',
+                fontStyle: 'normal',
+                fontWeight: '400',
+                lineHeight: '28px', /* 155.556% */
+                letterSpacing:' -0.36px'
+              }}>update your percentile </div>
               <input
                 type="text"
-                placeholder="Enter details"
+                placeholder="percentile"
                 style={inputStyle}
-                value={details}
-                onChange={handleDetailsChange}
+                value={rank}
+                onChange={handleRankChange}
               />
+              </div>
+              <div style={{
+                display: "flex",
+                justifyContent: "space-between"
+              }}>
+              <div style={{
+                color: 'var(--secondary-text, #566474)',
+                fontFamily: 'DM Sans, sans-serif ',
+                fontSize: '18px',
+                fontStyle: 'normal',
+                fontWeight: '400',
+                lineHeight: '28px', /* 155.556% */
+                letterSpacing:' -0.36px'
+              }}>update your score (out of 15) </div>
               <input
                 type="text"
-                placeholder="Update your percentile"
+                placeholder="score"
                 style={inputStyle}
-                value={percentile}
-                onChange={handlePercentileChange}
+                value={rank}
+                onChange={handleRankChange}
               />
-              <input
-                type="text"
-                placeholder="Update your current score (out of 15)"
-                style={inputStyle}
-                value={currentScore}
-                onChange={handleScoreChange}
-              />
+              </div>
             </div>
     
             <div style={buttonContainerStyle}>
-              <button onClick={handleCloseButtonClick}>Cancel</button>
-              <button style={{ marginLeft: '10px' }} onClick={handleSaveButtonClick}>Save</button>
+              <button onClick={handleCloseButtonClick} style={{
+                borderRadius: '5px',
+                border: '1px solid var(--dark-blue, #142683)',
+                padding: '8px 16px',
+
+                
+              }}>Cancel</button>
+              <button style={{ marginLeft: '10px',
+                            border: 'none',
+                            borderRadius: '5px',
+                            background: '#142683',
+                            padding: '8px 16px',
+                            color:"#ffffff"
+            }} onClick={handleSaveButtonClick}>Save</button>
             </div>
           </div>
         </div>

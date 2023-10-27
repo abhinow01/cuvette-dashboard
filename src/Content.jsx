@@ -10,7 +10,7 @@ function Content() {
   return (
     <div className='container'>
     <div className="content">
-      <div className="grid-container">
+      <div className="column1">
         <div className="item1">
           <Header />
         </div>
@@ -20,13 +20,16 @@ function Content() {
         <div className="item3">
           <ComparisonGraph />
         </div>
+        </div>
+        <div className='column2'>
         <div className="item4">
           <SubjectWiseAnalysis />
         </div>
         <div className="item5">
           <QuestionAnalysis />
         </div>
-      </div>
+        </div>
+      
     </div>
     </div>
   );

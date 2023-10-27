@@ -45,11 +45,10 @@ const containerStyle = {
 };
 
 const headingStyle = {
-  fontSize: '1.5em',
-  marginBottom: '10px',
-  color: 'var(--primary-text, #1E272E)',
- fontFamily: 'DM Sans, sans-serif',
-  fontSize: '16px',
+    marginBottom: '10px',
+    color: 'var(--primary-text, #1E272E)',
+    fontFamily: 'DM Sans, sans-serif',
+    fontSize: '16px',
     fontStyle: 'normal',
     fontWeight: '700',
     lineHeight: '28px', /* 175% */
