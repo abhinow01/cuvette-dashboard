@@ -47,7 +47,7 @@ function Header() {
     return (
       <div style={modalStyle}>
         <div>
-          <img src="./public/assets/html-logo.png" alt="HTML Logo" style={logoStyle} />
+          <img src="/assets/html-logo.png" alt="HTML Logo" style={logoStyle} />
         </div>
         <div style={contentStyle}>
           <div style={{
