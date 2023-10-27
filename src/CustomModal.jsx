@@ -94,7 +94,7 @@ function CustomModal({ isOpen, onClose ,updateData}) {
                 <h2>Update Scores</h2>
               </div>
               <div>
-                <img src="./assets/logo.png" alt="Logo" style={{ height: '30px' }} />
+                <img src="/assets/logo.png" alt="Logo" style={{ height: '30px' }} />
               </div>
             </div>
     
