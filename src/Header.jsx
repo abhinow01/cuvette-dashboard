@@ -19,11 +19,13 @@ function Header() {
     };
   
     const buttonStyle = {
-      backgroundColor: '#007bff',
+      backgroundColor: '#142683',
       color: '#fff',
+      height: '44px',
+      width: '120px',
+      padding: '4px',
       border: 'none',
-      borderRadius: '4px',
-      padding: '8px 16px',
+      borderRadius: '5px',
       cursor: 'pointer',
       position: 'absolute', // Set to absolute
       right: '20px',
@@ -52,14 +54,14 @@ function Header() {
         <div style={contentStyle}>
           <div style={{
             color: '#222F3E',
-            fontFamily: 'DM Sans',
+            fontFamily: 'DM Sans, sans-serif',
             fontSize: '16px',
             fontStyle: 'normal',
-            fontWeight: 700,
+            fontWeight: '700',
             lineHeight: 'normal',
             letterSpacing: '-0.32px'
           }}>
-            Add your content here
+            Hypertext Markup Language
           </div>
           <br />
           <div style={{
